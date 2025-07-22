@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grocery Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="grosorywebsite.css">
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3" >
+  <div class="container" style="background-color: rgb(101, 170, 71);" >
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="./freash maer logo.jpeg" alt="Logo">
+      <span class="ms-2 fw-bold text-light">FreshMart</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#groceryNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="groceryNavbar">
+    
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+  <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Products</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Vegetables</a></li>
+      <li><a class="dropdown-item" href="#">Fruits</a></li>
+      
+      
+      <li class="dropdown-submenu position-relative">
+        <a class="dropdown-item dropdown-toggle" href="#">Dairy</a>
+        <ul class="dropdown-menu sub-menu">
+          <li><a class="dropdown-item" href="#">Milk</a></li>
+          <li><a class="dropdown-item" href="#">Cheese</a></li>
+          <li><a class="dropdown-item" href="#">Butter</a></li>
+        </ul>
+      </li>
+
+      <li><a class="dropdown-item" href="#">Bakery</a></li>
+    </ul>
+  </li>
+  <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+  <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+</ul>
+
+
+     
+      <div class="nav-icons d-flex align-items-center">
+        <i class="fas fa-search" data-bs-toggle="modal" data-bs-target="#searchModal"></i>
+        <i class="fas fa-heart text-danger"></i>
+        <i class="fas fa-shopping-cart text-success"></i>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content search-modal">
+      <div class="modal-header">
+        <h5 class="modal-title">Search Products</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <input type="text" id="searchInput" placeholder="Search grocery items..." oninput="searchProducts()">
+        <div class="search-results" id="searchResults"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<section id="hero-slider">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+    
+   
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./healty food image.webp" class="d-block w-100" alt="Banner 1" />
+      </div>
+      <div class="carousel-item">
+        <img src="./food image 2.webp" class="d-block w-100" alt="Banner 2" />
+      </div>
+      <div class="carousel-item">
+        <img src="./grocery image.webp" class="d-block w-100" alt="Banner 3" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="categories py-5">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Shop by Category</h2>
+      <p class="text-muted">Explore our wide range of grocery categories</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+   
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="category-item position-relative text-center">
+          <div class="circle-img">
+            <img src="./vegetable image.jpg" alt="Organic Vegetable" class="img-fluid rounded-circle">
+            <div class="overlay">
+              <i class="fas fa-link"></i>
+            </div>
+          </div>
+          <h6 class="mt-3">Organic Vegetable</h6>
+        </div>
+      </div>
+
+   
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="category-item text-center">
+          <div class="circle-img">
+            <img src="./self care image.avif" alt="Personal Care" class="img-fluid rounded-circle">
+            <div class="overlay">
+              <i class="fas fa-link"></i>
+            </div>
+          </div>
+          <h6 class="mt-3">Personal Care</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="category-item text-center">
+          <div class="circle-img">
+            <img src="./fresh meet image.jpg" alt="Meat & Seafood" class="img-fluid rounded-circle">
+            <div class="overlay">
+              <i class="fas fa-link"></i>
+            </div>
+          </div>
+          <h6 class="mt-3">Meat & Seafood</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="category-item text-center">
+          <div class="circle-img">
+            <img src="./egg image.jpg" alt="Dairy & Eggs" class="img-fluid rounded-circle">
+            <div class="overlay">
+              <i class="fas fa-link"></i>
+            </div>
+          </div>
+          <h6 class="mt-3">Dairy & Eggs</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="category-item text-center">
+          <div class="circle-img">
+            <img src="./barkery image.webp" alt="Bakery" class="img-fluid rounded-circle">
+            <div class="overlay">
+              <i class="fas fa-link"></i>
+            </div>
+          </div>
+          <h6 class="mt-3">Bakery</h6>
+        </div>
+      </div>
+
+     
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="category-item text-center">
+          <div class="circle-img">
+            <img src="./sheed image.webp" alt="Grains & Staples" class="img-fluid rounded-circle">
+            <div class="overlay">
+              <i class="fas fa-link"></i>
+            </div>
+          </div>
+          <h6 class="mt-3">Grains & Staples</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="category-item text-center">
+          <div class="circle-img">
+            <img src="./spices lanka image.jpg" alt="Spices & Condiments" class="img-fluid rounded-circle">
+            <div class="overlay">
+              <i class="fas fa-link"></i>
+            </div>
+          </div>
+          <h6 class="mt-3">Spices & Condiments</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="category-item text-center">
+          <div class="circle-img">
+            <img src="./snacks image.jpg" alt="Sweets & Snacks" class="img-fluid rounded-circle">
+            <div class="overlay">
+              <i class="fas fa-link"></i>
+            </div>
+          </div>
+          <h6 class="mt-3">Sweets & Snacks</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="category-item text-center">
+          <div class="circle-img">
+            <img src="./drinks image.webp" alt="Beverages" class="img-fluid rounded-circle">
+            <div class="overlay">
+              <i class="fas fa-link"></i>
+            </div>
+          </div>
+          <h6 class="mt-3">Beverages</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="category-item text-center">
+          <div class="circle-img">
+            <img src="./home care image.jpeg" alt="Home Care" class="img-fluid rounded-circle">
+            <div class="overlay">
+              <i class="fas fa-link"></i>
+            </div>
+          </div>
+          <h6 class="mt-3">Home Care</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="best-deals py-5 text-white" style="background: url('./grocery-deals-bg.jpg') no-repeat center center/cover;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">grocery name <span class="d-block">For the Home</span></h2>
+      <p class="lead">Starting at just <strong>$45</strong></p>
+      <a href="#" class="btn btn-light btn-sm">View All Items</a>
+    </div>
+
+    <div class="row g-4">
+    
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="card bg-white text-dark shadow-sm h-100">
+          <img src="./vegetable box image.jpg" class="card-img-top" alt="Top Deal 1">
+          <div class="card-body">
+            <h5 class="card-title">Organic Veggie Box</h5>
+            <p class="card-text">Fresh organic vegetables. Starting at <strong>$45</strong>.</p>
+          </div>
+        </div>
+      </div>
+
+   
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="card bg-white text-dark shadow-sm h-100">
+          <img src="./fruits box image.jpg" class="card-img-top" alt="Top Deal 2">
+          <div class="card-body">
+            <h5 class="card-title">Fresh Fruits Basket</h5>
+            <p class="card-text">Seasonal fruits curated weekly. Starting at <strong>$50</strong>.</p>
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="card bg-white text-dark shadow-sm h-100">
+          <img src="./seeds combo image.avif" class="card-img-top" alt="Top Deal 3">
+          <div class="card-body">
+            <h5 class="card-title">Spices & Herbs Combo</h5>
+            <p class="card-text">Essential kitchen spices. Starting at <strong>$28</strong>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="card bg-white text-dark shadow-sm h-100">
+          <img src="./Healthy-breakfast-ideas image.jpg" class="card-img-top" alt="Top Deal 4">
+          <div class="card-body">
+            <h5 class="card-title">Healthy Breakfast Kit</h5>
+            <p class="card-text">Oats, milk, nuts & more. Starting at <strong>$35</strong>.</p>
+          </div>
+        </div>
+      </div>
+
+   
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="card bg-white text-dark shadow-sm h-100">
+          <img src="./becary image cambo.jpg" class="card-img-top" alt="Top Deal 5">
+          <div class="card-body">
+            <h5 class="card-title">Gourmet Bakery Pack</h5>
+            <p class="card-text">Bread, muffins & cookies. Starting at <strong>$40</strong>.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="card bg-white text-dark shadow-sm h-100">
+          <img src="./milk image cambo.avif" class="card-img-top" alt="Top Deal 6">
+          <div class="card-body">
+            <h5 class="card-title">Dairy Essentials</h5>
+            <p class="card-text">Milk, cheese, butter & more. Starting at <strong>$38</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="popular-products py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Popular Products</h2>
+      <p class="text-muted">Check out our most loved and new arrivals</p>
+    </div>
+
+    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        
+        <div class="carousel-item active">
+          <div class="row g-4">
+        
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img src="./mango image.jpg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                  <h5 class="card-title">Fresh Mangoes</h5>
+                  <p class="card-text">Sweet, juicy seasonal mangoes. Limited stock.</p>
+                  <p class="fw-bold text-success">$12 / kg</p>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="btn btn-outline-success btn-sm">View Details</a>
+                    <button class="btn btn-success btn-sm">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img src="./almond image.jpg" class="card-img-top" alt="Product 2">
+                <div class="card-body">
+                  <h5 class="card-title">Almond Pack</h5>
+                  <p class="card-text">High-quality whole almonds for healthy snacking.</p>
+                  <p class="fw-bold text-success">$20 / 500g</p>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="btn btn-outline-success btn-sm">View Details</a>
+                    <button class="btn btn-success btn-sm">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+         
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img src="./bread image.jpg" class="card-img-top" alt="Product 3">
+                <div class="card-body">
+                  <h5 class="card-title">Multigrain Bread</h5>
+                  <p class="card-text">Soft, fresh and packed with nutrition.</p>
+                  <p class="fw-bold text-success">$3.50 / loaf</p>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="btn btn-outline-success btn-sm">View Details</a>
+                    <button class="btn btn-success btn-sm">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row g-4">
+          
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img src="./oil image.jpg" class="card-img-top" alt="Product 4">
+                <div class="card-body">
+                  <h5 class="card-title">Cold Pressed Oil</h5>
+                  <p class="card-text">Pure, chemical-free cooking oil for healthy meals.</p>
+                  <p class="fw-bold text-success">$15 / liter</p>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="btn btn-outline-success btn-sm">View Details</a>
+                    <button class="btn btn-success btn-sm">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img src="./butter image.webp" class="card-img-top" alt="Product 5">
+                <div class="card-body">
+                  <h5 class="card-title">Dairy Cheese Block</h5>
+                  <p class="card-text">Creamy cheddar cheese perfect for sandwiches.</p>
+                  <p class="fw-bold text-success">$6 / 250g</p>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="btn btn-outline-success btn-sm">View Details</a>
+                    <button class="btn btn-success btn-sm">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img src="./honey image.jpg" class="card-img-top" alt="Product 6">
+                <div class="card-body">
+                  <h5 class="card-title">Natural Honey Jar</h5>
+                  <p class="card-text">Raw honey with no added sugar or preservatives.</p>
+                  <p class="fw-bold text-success">$10 / 500ml</p>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="btn btn-outline-success btn-sm">View Details</a>
+                    <button class="btn btn-success btn-sm">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+   
+      <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter-section text-white py-5" style="background: url('./sheed\ image.webp') no-repeat center center/cover;">
+  <div class="container">
+    <div class="row justify-content-start align-items-center">
+ 
+      <div class="col-md-6">
+        <h2 class="fw-bold">Subscribe & Save Big!</h2>
+        <p class="mb-4">Get exclusive grocery deals, weekly offers, and updates directly in your inbox.</p>
+
+      
+        <form class="row g-2">
+          <div class="col-8">
+            <input type="email" class="form-control" placeholder="Enter your email" required>
+          </div>
+          <div class="col-4">
+            <button type="submit" class="btn btn-success w-100">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features-section py-5 bg-light">
+  <div class="container">
+    <div class="row text-center">
+
+      <div class="col-md-4 mb-4 mb-md-0">
+        <i class="fas fa-truck fa-3x text-success mb-3"></i>
+        <h5 class="fw-bold">Fast Delivery</h5>
+        <p class="text-muted">Your groceries delivered in under 2 hours, fresh and safe.</p>
+      </div>
+
+     
+      <div class="col-md-4 mb-4 mb-md-0">
+        <i class="fas fa-lock fa-3x text-success mb-3"></i>
+        <h5 class="fw-bold">Secure Payment</h5>
+        <p class="text-muted">Multiple payment options with industry-standard encryption.</p>
+      </div>
+
+ 
+      <div class="col-md-4">
+        <i class="fas fa-headset fa-3x text-success mb-3"></i>
+        <h5 class="fw-bold">24/7 Support</h5>
+        <p class="text-muted">We’re always here to help, day or night, all week long.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer-section bg-dark text-white pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+
+     
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold text-success">FreshMart</h5>
+        <p>Your trusted online grocery store offering fresh and affordable products delivered right to your door.</p>
+      </div>
+
+  
+      <div class="col-md-3 mb-4">
+        <h6 class="text-uppercase fw-bold">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white-50 text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Shop</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">About Us</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="col-md-3 mb-4">
+        <h6 class="text-uppercase fw-bold">Top Categories</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white-50 text-decoration-none">Vegetables</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Dairy Products</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Snacks</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Beverages</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h6 class="text-uppercase fw-bold">Contact Us</h6>
+        <p class="text-white-50 mb-1"><i class="fas fa-map-marker-alt me-2"></i>bhubanswar office ,techctice,odisha</p>
+        <p class="text-white-50 mb-1"><i class="fas fa-phone me-2"></i>9178370273</p>
+        <p class="text-white-50"><i class="fas fa-envelope me-2"></i>soubhagyanandi2@gmail.com</p>
+      </div>
+
+    </div>
+
+    <hr class="border-light" />
+
+    <div class="text-center text-white-50">
+      &copy; 2025 FreshMart. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+</body>
+</html>

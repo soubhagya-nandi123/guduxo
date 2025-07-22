@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enfa - E-Commerce</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="e-commerce.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm py-3 px-4">
+  <div class="container-fluid">
+    <span class="menu-icon me-3 text-white">&#9776;</span>
+    <a class="navbar-brand fw-bold fs-4" href="#">Gudu's<span class="text-warning">.com</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ms-auto" id="navbarContent">
+      <ul class="navbar-nav ms-auto d-flex align-items-center gap-3">
+        <li class="nav-item dropdown dropdown-hover position-static">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+            Shopping
+          </a>
+          <ul class="dropdown-menu shadow">
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">Electronics</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Mobiles</a></li>
+                <li><a class="dropdown-item" href="#">Laptops</a></li>
+                <li><a class="dropdown-item" href="#">Headphones</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">Fashion</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Men</a></li>
+                <li><a class="dropdown-item" href="#">Women</a></li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="#">All Products</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Help</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container my-5">
+  <div class="banner-box p-4 rounded-4 d-flex flex-column flex-md-row align-items-center justify-content-between">
+    <div class="text-section text-center text-md-start">
+      <h2 class="fw-bold mb-2">Welcome to Gudu's Store</h2>
+      <p class="text-muted fs-5">Happy Shopping for Everyone!</p>
+      <div class="search-bar mt-4 d-flex justify-content-center justify-content-md-start">
+        <div class="input-group w-75">
+          <span class="input-group-text"><i class="bi bi-search text-primary"></i></span>
+          <input type="text" class="form-control" placeholder="Search for products">
+        </div>
+      </div>
+    </div>
+    <div class="image-section mt-4 mt-md-0 text-center w-100">
+      <div id="bannerCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner rounded-4 overflow-hidden" style="max-height: 300px;">
+          <div class="carousel-item active"><img src="https://media.istockphoto.com/id/1305615921/photo/young-man-shopping-online.jpg?s=612x612&w=0&k=20&c=NiQZwOFk88BMU2WzRp5sBArsGaWXsGJ4VzO2gXkA6RY=" class="d-block w-100" alt="Banner 1"></div>
+          <div class="carousel-item"><img src="https://media.istockphoto.com/id/1273305943/photo/clicking-here-should-take-me-to-payment-page.jpg?s=612x612&w=0&k=20&c=Ri9iI-KMxEj9rTrQRdhzashoJKuw9475En5w9eA73gw=" class="d-block w-100" alt="Banner 2"></div>
+          <div class="carousel-item"><img src="https://media.istockphoto.com/id/1401823204/photo/happy-afro-girl-in-barcelona-shopping-online-on-the-move.jpg?s=612x612&w=0&k=20&c=lu-5Ru86YkjnnvzJJ7Fj-Wtr6Ye437u4AkcjoHW-8VQ=" class="d-block w-100" alt="Banner 3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h5 class="fw-bold m-0 text-dark">Select Category</h5>
+    <a href="#" class="text-decoration-none text-secondary fw-semibold">Show All</a>
+  </div>
+  <div class="d-flex flex-wrap justify-content-between gap-3 category-row">
+    <div class="category-item"><div class="category-icon"><i class="bi bi-controller"></i></div><div>game</div></div>
+    <a href="./e-commerceoupen.html" class="text-decoration-none text-dark"><div class="category-item"><div class="category-icon"><i class="bi bi-phone"></i></div><div>Mobile</div></div></a>
+    
+    <div class="category-item"><div class="category-icon"><i class="bi bi-headphones"></i></div><div>Audio</div></div>
+    <div class="category-item"><div class="category-icon"><i class="bi bi-pc-display"></i></div><div>Computers</div></div>
+    <div class="category-item"><div class="category-icon"><i class="bi bi-watch"></i></div><div>Watches</div></div>
+    <div class="category-item"><div class="category-icon"><i class="bi bi-tv"></i></div><div>TV</div></div>
+    <div class="category-item"><div class="category-icon"><i class="bi bi-camera"></i></div><div>Camera</div></div>
+    <div class="category-item"><div class="category-icon"><i class="bi bi-bag"></i></div><div>Bags</div></div>
+    <div class="category-item"><div class="category-icon"><i class="bi bi-balloon-heart"></i></div><div>Toys</div></div>
+    <div class="category-item"><div class="category-icon"><i class="bi bi-basket"></i></div><div>Groceries</div></div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h5 class="fw-bold m-0 text-dark">Popular Products</h5>
+    <a href="#" class="text-decoration-none text-secondary fw-semibold">Show All</a>
+  </div>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card product-card">
+        <img src="https://media.istockphoto.com/id/1129341836/photo/cropped-close-up-image-view-photo-of-nice-attractive-feminine-fit-thin-slim-shaven-legs.jpg?s=2048x2048&w=is&k=20&c=aGA3KiRlvwjLbQXp4SG1vNq-uUt-LSntO9LKfGhsJyI=" class="card-img-top" alt="Product 1">
+        <div class="card-body text-center">
+          <h6 class="card-title">Product One</h6>
+          <p class="card-text text-muted">₹499</p>
+          <button class="btn btn-warning">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card product-card">
+        <img src="https://media.istockphoto.com/id/187310279/photo/brown-leather-shoe.jpg?s=612x612&w=0&k=20&c=N-G1SP8dDojp3M_ykS7tQuYI8OVPWM0XA8_knBiWRtY=" class="card-img-top" alt="Product 2">
+        <div class="card-body text-center">
+          <h6 class="card-title">Product Two</h6>
+          <p class="card-text text-muted">₹699</p>
+          <button class="btn btn-warning">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card product-card">
+        <img src="https://media.istockphoto.com/id/1223521713/photo/young-female-lying-in-new-beige-sneaker-son-cozy-comfortable-living-room-sofa-putting-feet-on.jpg?s=612x612&w=0&k=20&c=GxWYgm6lyellpcRaQUWQCiR_JnItr-m1hx_vynfk_FI=" class="card-img-top" alt="Product 3">
+        <div class="card-body text-center">
+          <h6 class="card-title">Product Three</h6>
+          <p class="card-text text-muted">₹899</p>
+          <button class="btn btn-warning">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card product-card">
+        <img src="https://media.istockphoto.com/id/491603822/photo/pair-of-green-sneakers.jpg?s=612x612&w=0&k=20&c=Rw-DKRCQFD4FsLmsTd9mSkABEKgr9FDhCPdDlH85xkc=">
+        <div class="card-body text-center">
+          <h6 class="card-title">Product Four</h6>
+          <p class="card-text text-muted">₹1299</p>
+          <button class="btn btn-warning">Buy Now</button>
+        </div>
+      </div>
+  </div>
+   
+    <div class="col-md-4">
+      <div class="card product-card">
+        <img src="https://media.istockphoto.com/id/1089844082/photo/close-up-of-sporty-woman-tying-shoelace-while-kneeling-outdoor-in-background-bridge-fitness.jpg?s=612x612&w=0&k=20&c=Wv91q9ihnMYw94wiR1ptwfajHYyR_y1dtUnTb6Dn5Ys=" class="card-img-top" alt="Product 6">
+        <div class="card-body text-center">
+          <h6 class="card-title
+">Product Six</h6>
+          <p class="card-text text-muted">₹1999</p>
+          <button class="btn btn-warning">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card product-card">
+        <img src="https://media.istockphoto.com/id/491603822/photo/pair-of-green-sneakers.jpg?s=612x612&w=0&k=20&c=Rw-DKRCQFD4FsLmsTd9mSkABEKgr9FDhCPdDlH85xkc=">
+        <div class="card-body text-center">
+          <h6 class="card-title">Product seven</h6>
+          <p class="card-text text-muted">₹1599</p>
+          <button class="btn btn-warning">Buy Now</button>
+        </div>
+      </div>
+  </div>
+    
+  </div>
+
+</body>
+</html>

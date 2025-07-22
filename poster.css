@@ -1,0 +1,101 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #210d0d;
+}
+
+header {
+  background: #e9e1e1;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 20px 50px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: orange;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, white 60%, orange 40%);
+  padding: 60px 80px;
+  position: relative;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.cta {
+  background: orange;
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cta i {
+  margin-right: 8px;
+}
+
+.hero-image img {
+  width: 500px;
+  transform: rotate(-5deg);
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 80px;
+  background: #f8f8f8;
+}
+
+.feature-box {
+  text-align: center;
+  max-width: 200px;
+}
+
+.feature-box i {
+  font-size: 28px;
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.feature-box h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}

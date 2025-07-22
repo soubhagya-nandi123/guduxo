@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Children's Store</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+<style>
+  <style>
+    .header {
+      background: #f0f8ff;
+      padding: 40px 0;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      color: #00796b;
+    }
+    .search-bar {
+      max-width: 500px;
+      margin: 20px auto;
+    }
+    .category-icon,
+    .popular-icon {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+    .section-title {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header" >
+    <h1>Store for Children</h1>
+    <p>Shopping time</p>
+    <div class="search-bar">
+      <input type="text" class="form-control" placeholder="Search...">
+    </div>
+    <style>
+
+  .carousel-inner img {
+    width: 100%;
+    height: 400px;
+
+    object-fit: cover;
+
+  }
+  </style>
+</head>
+<body>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://media.istockphoto.com/id/1618138666/photo/relax-laptop-and-credit-card-happy-woman-on-couch-in-living-room-for-internet-banking-in-home.jpg?s=612x612&w=0&k=20&c=FodxvEwcD0dn0mcG2nKioHdXfM5JHWzvIxBu3NQ7AOk="  alt="Los Angeles" width="600" height="400">
+    </div>
+    <div class="carousel-item">
+      <img src="https://media.istockphoto.com/id/2168361406/photo/woman-in-cafe-looking-at-smartphone-holding-a-card.webp?a=1&b=1&s=612x612&w=0&k=20&c=NL4VYUIdWaqvtIeXL4yeVL4IOnvLIlM8WoZhH5kGsRU="  alt="Chicago" width="600" height="400">
+    </div>
+    <div class="carousel-item">
+      <img src="https://media.istockphoto.com/id/2190128714/photo/young-woman-preparing-shipping-boxes-is-talking-on-the-phone.webp?a=1&b=1&s=612x612&w=0&k=20&c=o4DxNImQUTqN99dRVila3bJ3NywBb-_oPyH9MalYm9A=" alt="New York" width="600" height="400">
+    </div>
+  </div>
+  
+  
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+  </div>
+<div class="container mt-5">
+  
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">picsart</a>
+      <a class="dropdown-item" href="#">lightroom</a>
+      <a class="dropdown-item" href="#">photoshop</a>
+    </div>
+  </div>
+</div>
+<style>
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+</style>
+</head>
+<body>
+   
+<div class="container">
+  <h2>Multi-Level Dropdowns</h2>
+  <p>In this example, we have created a .dropdown-submenu class for multi-level dropdowns (see style section above).</p>
+  <p>Note that we have added jQuery to open the multi-level dropdown on click (see script section below).</p>                                        
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a tabindex="-1" href="#">HTML</a></li>
+      <li><a tabindex="-1" href="#">CSS</a></li>
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">3rd level dropdown</a></li>
+              <li><a href="#">3rd level dropdown</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+  <div class="container">
+    <h3 class="text-center section-title">Select Categories</h3>
+    <div class="row text-center">
+      <div class="col-6 col-md-2 mb-4">
+        <img src="https://img.icons8.com/?size=100&id=8077&format=png" class="category-icon" alt="Plumbing & Repair">
+        <p>Plumbing & Repair</p>
+      </div>
+      <div class="col-6 col-md-2 mb-4">
+        <img src="https://img.icons8.com/?size=96&id=Xwqu8cUREfko&format=png" class="category-icon" alt="Art & Creativity">
+        <p>Art & Creativity</p>
+      </div>
+      <div class="col-6 col-md-2 mb-4">
+        <img src="https://img.icons8.com/?size=100&id=kGX9L2tKAeaN&format=png" class="category-icon" alt="Hobby & Sport">
+        <p>Hobby & Sport</p>
+      </div>
+      <div class="col-6 col-md-2 mb-4">
+        <img src="https://img.icons8.com/?size=128&id=ppvoH6Z8Zb5Z&format=png" class="category-icon" alt="Games & Puzzles">
+        <p>Games & Puzzles</p>
+      </div>
+      <div class="col-6 col-md-2 mb-4">
+        <img src="https://img.icons8.com/?size=128&id=TiPE0w163waq&format=png" class="category-icon" alt="Clothes & Footwear">
+        <p>Clothes & Footwear</p>
+      </div>
+      <div class="col-6 col-md-2 mb-4">
+        <img src="https://img.icons8.com/?size=100&id=aDdoo60TCe3D&format=png" class="category-icon" alt="Health & Safety">
+        <p>Health & Safety</p>
+      </div>
+      <div class="col-6 col-md-2 mb-4">
+        <img src="https://img.icons8.com/?size=100&id=2962&format=png" class="category-icon" alt="Feeding & Nutrition">
+        <p>Feeding & Nutrition</p>
+      </div>
+      <div class="col-6 col-md-2 mb-4">
+        <img src="https://img.icons8.com/?size=100&id=duKZIhGlGNZu&format=png" class="category-icon" alt="Food & Drinks">
+        <p>Food & Drinks</p>
+      </div>
+      <div class="col-6 col-md-2 mb-4">
+        <img src="https://img.icons8.com/?size=100&id=sFYA0CzmaP_V&format=png" class="category-icon" alt="Boutiques & Shops">
+        <p>Boutiques & Shops</p>
+      </div>
+      <div class="col-6 col-md-2 mb-4">
+        <img src="https://img.icons8.com/?size=100&id=89619&format=png" class="category-icon" alt="Goods for Mothers">
+        <p>Goods for Mothers</p>
+      </div>
+    </div>
+
+    <h3 class="text-center section-title"> Most Popular</h3>
+    <div class="row text-center">
+      <div class="col-6 col-md-3 mb-4">
+        <img src="https://img.icons8.com/?size=96&id=CUByzzUJpaet&format=png" class="popular-icon" alt="Popular 1">
+        <p>Popular Item 1</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <img src="https://image.shutterstock.com/image-vector/middleaged-housewife-wearing-apron-showing-150nw-1045704985.jpg" class="popular-icon" alt="Popular 2">
+        <p>Popular Item 2</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <img src="https://img.icons8.com/?size=96&id=mBkyWceUPlkM&format=png" class="popular-icon" alt="Popular 3">
+        <p>Popular Item 3</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <img src="https://img.icons8.com/?size=96&id=13022&format=png" class="popular-icon" alt="Popular 4">
+        <p>Popular Item 4</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+</html>

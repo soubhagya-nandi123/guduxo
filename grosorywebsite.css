@@ -1,0 +1,190 @@
+.navbar-brand img {
+      height: 45px;
+    }
+    .nav-icons i {
+      font-size: 1.4rem;
+      margin-left: 18px;
+      cursor: pointer;
+    }
+    .search-modal input {
+      width: 100%;
+      padding: 15px;
+      font-size: 18px;
+      border: none;
+      border-bottom: 2px solid #bf7979;
+    }
+    .search-results {
+      max-height: 300px;
+      overflow-y: auto;
+      padding: 10px;
+    }
+    .search-results p {
+      padding: 6px 0;
+      border-bottom: 1px solid #f1f1f1;
+    }
+    /* style.css */
+
+.carousel-item img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+/* Categories Section */
+/* === Categories Section === */
+.categories {
+  background-color: #f9f9f9;
+}
+
+.category-item .circle-img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Keeps it a perfect circle */
+  overflow: hidden;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.category-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.category-item .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.category-item:hover .overlay {
+  opacity: 1;
+}
+
+.category-item:hover img {
+  transform: scale(1.05);
+}
+
+.category-item h6 {
+  font-weight: 600;
+  margin-top: 12px;
+  color: #333;
+}
+.best-deals .card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.best-deals h2,
+.best-deals p {
+  color: rgb(98, 172, 161);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.best-deals .btn {
+  margin-top: 10px;
+}
+.best-deals h2,
+.best-deals p {
+  color: rgb(247, 21, 21);
+  text-shadow: 1px 1px 3px rgba(254, 251, 251, 0.6);
+}
+
+.best-deals .card img {
+  height: 220px;
+  object-fit: cover;
+}
+.popular-products .card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.popular-products .btn-sm {
+  font-size: 0.85rem;
+}
+.newsletter-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.newsletter-section h2,
+.newsletter-section p {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+.newsletter-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.newsletter-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay for readability */
+  z-index: 1;
+}
+
+.newsletter-section .container {
+  position: relative;
+  z-index: 2;
+}
+.footer-section a:hover {
+  color: #fff !important;
+  text-decoration: underline;
+}
+
+.features-section i {
+  transition: transform 0.3s;
+}
+.features-section i:hover {
+  transform: scale(1.2);
+}
+/* Multi-level dropdown */
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: 0.1rem;
+  margin-top: -0.25rem;
+  display: none;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu > a::after {
+  content: " ▶";
+  float: right;
+}
+/* .navbar {
+  background-color: black;
+} */
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+
+        .class {
+            background-color: blue;
+            color: rgb(226, 220, 220);
+            border: 2px solid black;
+            height: auto;
+            width: 250px;
+            border-radius: 100%;
+            text-align: center;
+            padding: 20px 20px 20px 20px;
+            margin: 50px;
+        }
+        #name{
+            color: rgb(244, 236, 236);
+        }
+
+        .class1 {
+            background-color: rgb(255, 0, 238);
+            color: white;
+            border: 2px solid black;
+            height: 150px;
+            width: 180px;
+            border-radius: 60%;
+            text-align: center;
+            padding: 20px 20px 20px 20px;
+            margin: 50px;
+        }
+        .class2 {
+            background-color: rgb(0, 255, 0);
+            color: rgb(185, 46, 148);
+            border: 2px solid black;
+            height: 150px;
+            width: 180px;
+            border-radius: 60%;
+            text-align: center;
+            padding: 20px 20px 20px 20px;
+            margin: 50px;
+        }
+        .container {
+            display: inline-flex;
+            background-color: rgb(177, 124, 144);
+             
+            
+        }

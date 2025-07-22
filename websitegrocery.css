@@ -1,0 +1,400 @@
+/* Custom Styling */
+.top-banner {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+}
+
+.banner-img {
+  background: url('https://img.freepik.com/free-photo/top-view-fresh-vegetables-black-table_23-2148293337.jpg') no-repeat center center/cover;
+  height: 500px;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.banner-overlay h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.btn-green {
+  background-color: #60b246;
+  border: none;
+  color: white;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.top-bar {
+  background-color: #4caf50;
+  font-size: 14px;
+}
+
+.navbar-light .nav-link {
+  color: #000 !important;
+  font-weight: 500;
+}
+
+.navbar-light .nav-link:hover {
+  color: #4caf50 !important;
+}
+
+.badge.bg-success {
+  font-size: 12px;
+}
+
+input.form-control::placeholder {
+  font-size: 14px;
+}
+.btn-green:hover {
+  background-color: #4b9436;
+}
+
+.badge-sale {
+  background-color: #498a36;
+  color: white;
+}
+/* Reset Bootstrap's nav-link active style */
+.nav-link.active {
+  color: inherit !important;
+}
+
+/* Custom Nav Styling */
+.custom-nav .nav-link {
+  font-size: 16px;          /* same text size */
+  color: #1c72c3 !important; /* Bootstrap's 'success' green */
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.custom-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-link.active {
+  color: hsl(215, 79%, 49%) !important;
+}
+
+.category-icon {
+  font-size: 1.2rem;
+  margin-right: 6px;
+}
+/* Category Scrollbar hidden */
+.category-item img {
+  height: 60px;
+  object-fit: contain;
+}
+
+::-webkit-scrollbar {
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 5px;
+}
+/* Custom scrollbar for horizontal scrolling */
+.featured-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.featured-scroll::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+.featured-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Make badge more prominent */
+.card .badge {
+  font-size: 0.75rem;
+  padding: 0.4em 0.6em;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/* Hover effect for card */
+.card:hover {
+  transform: translateY(-3px);
+  transition: 0.3s ease;
+}
+
+/* Responsive padding for section */
+@media (max-width: 576px) {
+  .card {
+    width: 220px !important;
+  }
+}
+.product-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+  height: 100%;
+  background: #fff;
+}
+
+.discount-badge {
+  position: absolute;
+  background-color: #f0c14b;
+  color: #333;
+  padding: 5px 10px;
+  font-weight: bold;
+  top: 10px;
+  left: 10px;
+  border-radius: 5px;
+}
+
+.price-original {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.price-discount {
+  color: red;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.product-image {
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.timer-box span {
+  background-color: #8BC34A;
+  color: white;
+  padding: 5px 10px;
+  margin-right: 5px;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.full-width-banner {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orange-bg {
+  background-color: #f57c00;
+}
+
+.green-bg {
+  background-color: #388e3c;
+}
+
+.product-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+body {
+  background-color: #f8f9fa;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  height: 100%;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ffc107;
+  padding: 4px 10px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #000;
+  border-radius: 5px;
+}
+
+.product-title {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #333;
+}
+
+.price-discount {
+  color: red;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.price-original {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
+/* Background styles for cards */
+.bg-corn {
+  background: linear-gradient(120deg, #d8ecb6 0%, #e2e2a2 100%);
+  color: #2e7d32;
+  position: relative;
+}
+
+.bg-banana {
+  background: linear-gradient(120deg, #d7f8c6, #a0d3a2);
+  color: #2e7d32;
+  position: relative;
+}
+
+.bg-choco {
+  background: linear-gradient(120deg, #fff4e6, #ffe0b2);
+  color: #4e342e;
+  position: relative;
+}
+
+.bg-softgray {
+  background: linear-gradient(120deg, #e0e0e0, #f5f5f5);
+  color: #333;
+  position: relative;
+}
+
+.discount-card {
+  overflow: hidden;
+  min-height: 250px;
+}
+
+/* Text emphasis for contrast */
+.text-light-emphasis {
+  color: rgba(255, 255, 255, 0.8);
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-title {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.card img {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+footer h6 {
+  color: #212529;
+}
+
+footer ul li {
+  margin-bottom: 8px;
+}
+
+footer ul li a:hover {
+  color: #198754; /* Bootstrap success color */
+}
+.carousel-item {
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  max-width: 90%;
+  z-index: 2;
+}
+
+.carousel-overlay p {
+  color: #ffc107;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.carousel-overlay h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.btn-green {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-green:hover {
+  background-color: #218838;
+}
+.full-width-banner {
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+}
+
+.orange-bg {
+  background: linear-gradient(to right, #f7941d, #f26522);
+}
+
+.green-bg {
+  background: linear-gradient(to right, #39b54a, #009245);
+}
+
+.full-width-banner strong {
+  font-size: 1.5rem;
+}
+
+.full-width-banner img {
+  max-height: 100px;
+}
+
+@media (max-width: 768px) {
+  .full-width-banner {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .full-width-banner img {
+    margin-top: 10px;
+  }
+}

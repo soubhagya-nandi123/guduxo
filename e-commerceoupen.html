@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ShopEase - E-Commerce</title>
+  <link rel="stylesheet" href="e-commerceoupen.css" >
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    /* Multi-level Dropdown */
+    .dropdown-submenu {
+      position: relative;
+    }
+    .dropdown-submenu > .dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-left: 0.1rem;
+      margin-top: -0.5rem;
+    }
+    .dropdown-submenu > a::after {
+      content: "›";
+      float: right;
+      margin-left: 0.5rem;
+    }
+
+    /* Product Card Styling */
+    .product-card img {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .carousel-inner img {
+      height: 400px;
+      object-fit: cover;
+    }
+
+    footer i {
+      font-size: 1.5rem;
+      margin: 0 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Gudu's<span class="text-warning">gallery</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+
+        <!-- Multi-level Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Products</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">Electronics</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Mobiles</a></li>
+                <li><a class="dropdown-item" href="#">Laptops</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">Fashion</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Men</a></li>
+                <li><a class="dropdown-item" href="#">Women</a></li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="#">All Products</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Carousel -->
+<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/welcome/switch/welcome__n6xy87ib1gyu_xlarge.jpg" class="d-block w-100" alt="Banner 1">
+    </div>
+    <div class="carousel-item">
+      <img src="https://vivonewsroom.b-cdn.net/wp-content/uploads/2025/06/PRoduct-Page-MObile-Banner.jpg" class="d-block w-100" alt="Banner 2">
+    </div>
+    <div class="carousel-item">
+      <img src="" class="d-block w-100" alt="Banner 3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<div class="container my-5">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h5 class="fw-bold m-0 text-dark">Select Category</h5>
+    <a href="#" class="text-decoration-none text-secondary fw-semibold">Show All</a>
+  </div>
+  <div class="d-flex flex-wrap justify-content-between gap-3 category-row">
+
+    <div class="category-item">
+      <div class="category-icon"><img src="./samsung logo.png" alt="Game" width="32" height="32"></div>
+      <div>samsung</div>
+    </div>
+
+    <div class="category-item">
+      <div class="category-icon"><img src="./apple logo new.png" alt="Mobile" width="32" height="32"></div>
+      <div>apple</div>
+    </div>
+
+    <div class="category-item">
+      <div class="category-icon"><img src="./vivo logo.png" alt="Audio" width="32" height="32"></div>
+      <div>vivo</div>
+    </div>
+
+    <div class="category-item">
+      <div class="category-icon"><img src="./appo logo.jpeg" alt="Computers" width="32" height="32"></div>
+      <div>appo</div>
+    </div>
+
+    <div class="category-item">
+      <div class="category-icon"><img src="./motorola logo.png" alt="Watches" width="32" height="32"></div>
+      <div>motorola</div>
+    </div>
+
+    <div class="category-item">
+      <div class="category-icon"><img src="./infinix logo.png" alt="TV" width="32" height="32"></div>
+      <div>infinix</div>
+    </div>
+
+    <div class="category-item">
+      <div class="category-icon"><img src="./nokia logo.png" alt="Camera" width="32" height="32"></div>
+      <div>nokia</div>
+    </div>
+
+    <div class="category-item">
+      <div class="category-icon"><img src="./realme logo.png" alt="Bags" width="32" height="32"></div>
+      <div>realme</div>
+    </div>
+
+    <div class="category-item">
+      <div class="category-icon"><img src="./mi logo.png" alt="Toys" width="32" height="32"></div>
+      <div>Mi</div>
+    </div>
+
+    <div class="category-item">
+      <div class="category-icon"><img src="./lenevo logo.png" alt="Groceries" width="32" height="32"></div>
+      <div>lenovo</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Featured Products -->
+<section class="container my-5">
+  <div class="text-center mb-4">
+    <h2 class="fw-bold">Featured Products</h2>
+    <p class="text-muted">Best deals just for you</p>
+  </div>
+
+  <div class="row g-4">
+    <a href="hvf.html">
+    <div class="col-md-4">
+      <div class="card product-card shadow-sm">
+        <img src="https://images.unsplash.com/photo-1619976396248-56d05beb2919" class="card-img-top" alt="Classic Watch">
+        <div class="card-body text-center">
+          <h5 class="card-title">Classic Watch</h5>
+          <p class="card-text text-muted">₹1,499</p>
+          <button class="btn btn-warning">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    </a>
+    <div class="col-md-4">
+      <div class="card product-card shadow-sm">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" class="card-img-top" alt="Headphones">
+        <div class="card-body text-center">
+          <h5 class="card-title">Wireless Headphones</h5>
+          <p class="card-text text-muted">₹2,299</p>
+          <button class="btn btn-warning">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card product-card shadow-sm">
+        <img src="https://images.unsplash.com/photo-1511886929837-354d827aae26" class="card-img-top" alt="Shoes">
+        <div class="card-body text-center">
+          <h5 class="card-title">Sports Shoes</h5>
+          <p class="card-text text-muted">₹1,899</p>
+          <button class="btn btn-warning">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card product-card shadow-sm">
+        <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8U3BvcnRzfGVufDB8fDB8fHww" class="card-img-top" alt="Shoes">
+        <div class="card-body text-center">
+          <h5 class="card-title">running shoes</h5>
+          <p class="card-text text-muted">₹1,899</p>
+          <button class="btn btn-warning">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card product-card shadow-sm">
+        <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8U3BvcnRzfGVufDB8fDB8fHww" class="card-img-top" alt="Shoes">
+        <div class="card-body text-center">
+          <h5 class="card-title">volly ball</h5>
+          <p class="card-text text-muted">₹1,899</p>
+          <button class="btn btn-warning">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card product-card shadow-sm">
+        <img src="https://plus.unsplash.com/premium_photo-1684820878202-52781d8e0ea9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8U3BvcnRzfGVufDB8fDB8fHww" class="card-img-top" alt="Shoes">
+        <div class="card-body text-center">
+          <h5 class="card-title">Sports cycle</h5>
+          <p class="card-text text-muted">₹1,899</p>
+          <button class="btn btn-warning">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4 mt-5">
+  <div class="container">
+    <p class="mb-1">© 2025 ShopEase. All rights reserved.</p>
+    <div>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-twitter"></i>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Multi-level Dropdown JS -->
+<script>
+  document.querySelectorAll('.dropdown-submenu .dropdown-toggle').forEach(function (element) {
+    element.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      let submenu = this.nextElementSibling;
+      if (submenu) {
+        submenu.classList.toggle('show');
+      }
+      document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(function (el) {
+        if (el !== submenu) {
+          el.classList.remove('show');
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

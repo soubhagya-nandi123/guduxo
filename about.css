@@ -1,0 +1,42 @@
+/* about.css - Styles for the About page */
+@import url('profile.css');
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #232946;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+h2 {
+  color: #232946;
+  margin-bottom: 1rem;
+}
+.about-content {
+  background: rgba(255,255,255,0.85);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(35,41,70,0.06);
+  padding: 2rem;
+}
+.about-details {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+.about-details li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #393e46;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem 0.5rem;
+  }
+  .about-content {
+    padding: 1rem;
+  }
+}
